@@ -1,6 +1,6 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import "./globals.scss";
-
 export const metadata: Metadata = {
   title: "Chatify",
   description: "A Web Chat Application",
@@ -8,12 +8,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" data-bs-theme="light">
+      <body>
+        <Suspense fallback={<p>Loading...</p>}>{children}</Suspense>
+      </body>
     </html>
   );
 }
