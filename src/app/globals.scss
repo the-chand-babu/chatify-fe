@@ -1,37 +1,11 @@
 @import "@Components/Theme/light-theme-color";
 @import "@Components/Theme/dark-theme-color";
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-Semibold.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-Light.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-Black.otf") format("opentype");
-  font-weight: 900;
-  font-style: normal;
+:root {
+  --font-family-atkinson: "Atkinson HyperLegible";
+  --font-family-nunitoSans: "Nunito Sans";
 }
 
 body {
-  font-family: "Source Sans Pro";
+  font-family: var(--font-family-nunitoSans) sans-serif;
 }

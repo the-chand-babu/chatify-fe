@@ -1,0 +1,49 @@
+#custom-text-area {
+  .text-area-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-primary-text);
+    margin-bottom: 5px;
+    font-family: var(--font-family-nunitoSans) sans-serif;
+    .required-icon {
+      color: var(--color-text-required);
+    }
+  }
+  .custom-text-area {
+    width: 100%;
+    min-height: 85px;
+    padding: 8px 10px;
+    font-family: var(--font-family-nunitoSans) sans-serif;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-primary-text);
+    border: 1px solid var(--color-field-border);
+    border-radius: 8px;
+    height: fit-content;
+    resize: none;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+      border: 1.5px solid var(--color-field-outlined);
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color-primary-text);
+      font-family: var(--font-family-nunitoSans) sans-serif;
+      opacity: 0.6;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+  }
+  .error-message-helper-text {
+    color: var(--color-error-message);
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
