@@ -1,0 +1,89 @@
+#custom-textField-wrapper {
+  width: 100%;
+}
+
+#custom-textField-wrapper .text-field-heading {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary-text);
+  margin-bottom: 5px;
+
+  .required-icon {
+    color: var(--color-text-required);
+  }
+}
+
+#custom-textField-wrapper .input-button-wrapper {
+  display: flex;
+  position: relative;
+}
+
+#custom-textField-wrapper .input-button-wrapper .text-field-input-field {
+  width: 100%;
+}
+
+#custom-textField-wrapper .input-button-wrapper .text-field-input-field input {
+  height: 20px;
+  padding: 10px 20px 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-primary-text);
+  width: 100%;
+}
+
+#custom-textField-wrapper
+  .input-button-wrapper
+  .text-field-input-field
+  input.Mui-disabled {
+  background-color: #e3e3e380 !important;
+  color: #726c6c !important;
+  border-radius: 8px;
+}
+
+#custom-textField-wrapper
+  .input-button-wrapper
+  .text-field-input-field
+  .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-radius: 8px;
+  transition: border 0.2s ease-in-out;
+}
+
+#custom-textField-wrapper
+  .input-button-wrapper
+  .text-field-input-field
+  .MuiOutlinedInput-notchedOutline {
+  border: 1px solid var(--color-field-border);
+  border-radius: 8px;
+}
+
+#custom-textField-wrapper
+  .input-button-wrapper
+  .text-field-input-field
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border: 1.5px solid var(--color-field-outlined);
+  border-radius: 8px;
+}
+
+#custom-textField-wrapper .input-button-wrapper .validated-state .check-icon {
+  display: flex;
+  align-items: center;
+}
+
+#custom-textField-wrapper
+  .input-button-wrapper
+  .validated-state
+  .validated-text {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 400;
+}
+
+#custom-textField-wrapper .error-message-helper-text {
+  color: var(--color-error-message);
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+  margin-top: 5px;
+}
