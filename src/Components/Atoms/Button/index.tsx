@@ -6,7 +6,7 @@ interface CustomButtonProps {
   variant?: "text" | "contained" | "outlined";
   onClick?: () => void;
   disabled?: boolean;
-  className: string | undefined;
+  className?: string | undefined;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({

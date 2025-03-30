@@ -14,7 +14,6 @@
     min-height: 85px;
     padding: 8px 10px;
     font-family: var(--font-family-nunitoSans) sans-serif;
-
     font-size: 14px;
     font-weight: 500;
     color: var(--color-primary-text);
@@ -23,6 +22,8 @@
     height: fit-content;
     resize: none;
     background-color: transparent;
+    margin: 0;
+    box-sizing: border-box;
     &:focus {
       outline: none;
       border: 1.5px solid var(--color-field-outlined);
