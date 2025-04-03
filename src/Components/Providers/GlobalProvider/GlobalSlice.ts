@@ -14,6 +14,7 @@ const globalSlice = createSlice({
     },
     setTheme: (state, action: PayloadAction<string>) => {
       localStorage.setItem("theme", action.payload);
+      document.documentElement.setAttribute("data-bs-theme", action.payload);
       return { ...state, theme: action.payload };
     },
     clearGlobalState: () => initialState,

@@ -1,0 +1,40 @@
+#navbar-wrapper {
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: var(--navbar-bg-color);
+  background: #5b5fc7;
+  .logo {
+    display: inline-block;
+    transform: rotate(-10deg);
+    font-size: 20px; /* Increased for better visibility */
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Lobster", cursive; /* Unique stylish font */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    padding: 8px 15px;
+
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .logo:hover {
+    transform: rotate(0deg) scale(1.15); /* Slight zoom effect */
+  }
+
+  .logo .t-content {
+    color: #ffeb3b; /* Yellow for a pop effect */
+    font-weight: bold;
+    font-family: "Pacifico", cursive; /* Different stylish font for contrast */
+  }
+}
