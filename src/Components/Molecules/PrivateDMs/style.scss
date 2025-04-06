@@ -1,0 +1,65 @@
+#private-dms-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+
+  .chats-heading {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--color-bg-card-menu);
+
+    .heading-content {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--color-secondary-text);
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+  }
+
+  //user chat list
+  .user-chat-list-wrapper {
+    height: 100%;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: transparent;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: grey;
+      }
+    }
+    .user-chat {
+      padding: 12px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .user-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-primary-text);
+        margin: 0;
+        text-transform: capitalize;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &:hover {
+        background-color: var(--color-bg-card-menu);
+      }
+    }
+  }
+}

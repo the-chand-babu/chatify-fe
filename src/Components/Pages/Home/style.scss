@@ -1,0 +1,11 @@
+#home-main-container {
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  background: var(--color-bg-body);
+  .message-container {
+    height: calc(100vh - 62px);
+  }
+}
